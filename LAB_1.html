@@ -5,12 +5,16 @@
 <head>
 <meta charset="utf-8">
 	<!-- To keep code footprint small I have used Bootstrap 4 CSS from their CDN servers -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+
+    
 <title>Atharva Unde : WT 1</title>
 </head>
 
 <body>
-<div class="container" style="text-align: center">
+<!--<div class="container" style="text-align: center">
 	<br>
 	<h1>WT Home Assignment : 1.</h1>
 </div>
@@ -98,9 +102,114 @@
              <p>Copyright &copy; 2019 &middot; All Rights Reserved &middot; <a href="https://atharvaunde.com/download/Resume.pdf" target="_blank" >My C.V</a></p>
           </div>
        </div>
-</div>
+</div>-->
 
 <!-- JS Can be added here -->
 	<!--Please Dont Clone The Code -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <a class="navbar-brand" href="#">
+    <img src="/docs/4.2/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    Bootstrap
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+    <center>
+    <div class="container" >
+
+    <img src="https://timedotcom.files.wordpress.com/2017/11/google-doode_pad-thai.png" class="img-custom"></div> </center>
+
+    <hr>
+   
+<div class="container-fluid" >
+ 
+      <center><h3>Register Below</h3></center>        
+        <div class="form-group row">
+          
+    <label for="example-text-input" class="col-2 col-form-label">Name</label>
+	  <div class="col-10">
+    <input class="form-control" type="text"  id="name" name="name">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-search-input" class="col-2 col-form-label">I'm !</label>
+  <div class="col-10">
+    <input class="form-control" type="search"  id="example-search-input">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-email-input" class="col-2 col-form-label">Email</label>
+  <div class="col-10">
+    <input class="form-control" type="email"  id="example-email-input">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-url-input" class="col-2 col-form-label">LinkedIn </label>
+  <div class="col-10">
+    <input class="form-control" type="url"  id="example-url-input">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-tel-input" class="col-2 col-form-label">Mobile</label>
+  <div class="col-10">
+    <input class="form-control" type="tel"  id="example-tel-input">
+  </div>
+</div>
+
+
+
+<div class="form-group row">
+  <label for="example-date-input" class="col-2 col-form-label">DoB</label>
+  <div class="col-10">
+    <input class="form-control" type="date"  id="example-date-input">
+  </div>
+    
+</div>
+    <center>
+    <input type="submit" name="send" id="send" value="send" class="btn btn-primary"></center>
+    </div>
+    <script type="text/javascript">
+window.onload = function(){
+   document.getElementById('send').onclick = function(e){
+       confirm(document.getElementById("name").value);
+       return false;
+   }
+}
+</script>
+    
+    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 </html>
